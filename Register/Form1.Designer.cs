@@ -16,6 +16,7 @@ namespace CashRegisterApp
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Burger_Town_Cash_Register));
             this.titleLabel = new System.Windows.Forms.Label();
             this.burgerLabel = new System.Windows.Forms.Label();
             this.friesLabel = new System.Windows.Forms.Label();
@@ -257,6 +258,7 @@ namespace CashRegisterApp
             this.Controls.Add(this.newOrderButton);
             this.Controls.Add(this.receiptBox);
             this.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Burger_Town_Cash_Register";
             this.Text = "Burger Town Cash Register";
             this.Load += new System.EventHandler(this.Burger_Town_Cash_Register_Load);
