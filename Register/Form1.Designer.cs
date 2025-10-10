@@ -45,7 +45,7 @@ namespace CashRegisterApp
             // 
             this.titleLabel.AutoSize = true;
             this.titleLabel.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold);
-            this.titleLabel.Location = new System.Drawing.Point(270, 9);
+            this.titleLabel.Location = new System.Drawing.Point(271, 23);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(291, 30);
             this.titleLabel.TabIndex = 0;
@@ -225,7 +225,7 @@ namespace CashRegisterApp
             this.card.Enabled = false;
             this.card.Location = new System.Drawing.Point(318, 200);
             this.card.Name = "card";
-            this.card.Size = new System.Drawing.Size(100, 28);
+            this.card.Size = new System.Drawing.Size(100, 25);
             this.card.TabIndex = 22;
             this.card.Text = "Credit/Debit";
             this.card.Click += new System.EventHandler(this.button1_Click);
@@ -262,6 +262,11 @@ namespace CashRegisterApp
             this.Load += new System.EventHandler(this.Burger_Town_Cash_Register_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
+
+        }
+
+        private void receiptBox_TextChanged(object sender, System.EventArgs e)
+        {
 
         }
 
